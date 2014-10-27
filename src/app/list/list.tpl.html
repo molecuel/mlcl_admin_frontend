@@ -1,0 +1,12 @@
+<button id="createButton" class="btn btn-mini btn-primary form-btn" ui-sref='mlcl.elements::new({model: modelname})'><i class="fa fa-plus"></i> Create new</button>
+<div class="clearfix"></div>
+<div loading-container="tableParams.settings().$loading">
+  <table ng-table="tableParams" template-header="list/listheader.tpl.html" show-filter="true" class="table table-hover">
+    <tbody>
+      <tr ng-repeat="element in $data" ui-sref="mlcl.elements::edit({model: modelname, record: element._id})">
+          <td  ng-repeat="column in columns" sortable="column.field">
+            {{element[column.field]}}
+          </td>
+    </tbody>
+  </table>
+</div>

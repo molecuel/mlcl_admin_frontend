@@ -1,0 +1,9 @@
+<li>
+    <a href="#"><i class="fa fa-files-o fa-fw"></i> Content<span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+      <li ng-repeat="menuitem in menuitems">
+          <a ui-sref='mlcl.elements::list({elmodel: "{{menuitem.resourceName}}"})'>{{menuitem.resourceName}}</a>
+      </li>
+    </ul>
+    <!-- /.nav-second-level -->
+</li>

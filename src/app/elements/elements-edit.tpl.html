@@ -1,0 +1,7 @@
+<div class="row">
+  <h1>{{params.model}}</h1>
+  <button id="saveButton" class="btn btn-mini btn-primary form-btn" ng-click="api.save(attrs.record, record)" ng-disabled="isSaveDisabled()" disabled="disabled"><i class="icon-ok"></i> Save</button>
+  <form-input name="baseForm" modelname="{{params.model}}" apihost="{{apiserver}}" record="{{params.record}}" formstyle="compact"></form-input>
+  <button id="saveButton" class="btn btn-mini btn-primary form-btn" ng-click="api.save(attrs.record, record)" ng-disabled="isSaveDisabled()" disabled="disabled"><i class="icon-ok"></i> Save</button>
+  <button id="deleteButton" class="btn btn-mini btn-primary form-btn" ng-click="api.deleteRecordDialog(attrs.record, deleteOptions)"><i class="icon-ok"></i> Delete</button>
+</div>

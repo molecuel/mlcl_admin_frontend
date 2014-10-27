@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="loginWindow">
+    <video width="100%" height="100%" id="bgvid" loop autoplay>
+      <source src="assets/Cloudytime.webm" type="video/webm">
+      <source src="assets/Cloudytime.mp4" type="video/mp4">
+    </video>
+    <div class="col-md-12">
+      <div class="col-sm-6 col-md-4 col-md-offset-4">
+        <div class="account-wall">
+            <svg class="login-logo-img" width="90" height="90">
+              <image xlink:href="assets/molecuel_logo.svg" src="assets/molecuel_logo.svg" width="90" height="90"/>
+            </svg>
+            <form class="form-signin">
+            <input type="text" class="form-control" placeholder="Username" autofocus ng-model="user.username" required>
+            <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="serverchange">Advanced settings
+              </label>
+            </div>
+            <input ng-show="serverchange" class="form-control" placeholder="server" type="text" ng-model="config.server"></input>
+            <div ng-show="serverchange" class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="config.ssl">SSL enabled
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="auth.login(user, config)">
+                Sign in</button>
+        </div>
+      </div>
+		</div>
+    <div class="col-md-12">
+      <div class="ani">
+        <div class="molecuel-full">
+          <div class="molecuel-right">
+            <div class="molecuel-left">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vidattribution">
+      Video by Marc Lorenz under <a href="http://creativecommons.org/licenses/by/3.0/legalcode">CC BY 3.0<a>
+    </div>
+  </div>
+</div>
